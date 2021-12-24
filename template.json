@@ -23,7 +23,7 @@
       },
       "instance_type": "t2.micro",
       "ssh_username": "{{user `ssh_username`}}",
-      "ami_name": "packer-example {{timestamp}}"
+      "ami_name": "packer-example {{timestamp}}",
 	  "tags":{
 		"Name": "My-AMII - {{timestamp}}",
 		"lifecycle": "authorized"
