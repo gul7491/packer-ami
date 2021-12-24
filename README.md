@@ -1,0 +1,2 @@
+# packer-ami
+packer template
