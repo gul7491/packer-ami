@@ -2,7 +2,7 @@
   "variables": {
     "aws_access_key": "",
     "aws_secret_key": "",
-	"ssh_username": "ec2-user"
+	"ssh_username": "ubuntu"
   },
   "builders": [
     {
@@ -28,6 +28,7 @@
 		"Name": "My-AMII - {{timestamp}}",
 		"lifecycle": "authorized"
 	  }
+	"ssh_timeout" : "10m"
     }
   ],
   "provisioners": [
