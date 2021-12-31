@@ -14,3 +14,4 @@ sudo apt install -y docker-ce
 sudo systemctl status docker
 sudo systemctl start docker
 echo "$(docker --version)"
+echo "docker installation completed"
