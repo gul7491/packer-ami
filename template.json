@@ -25,7 +25,7 @@
 		"Name": "My-AMII - {{timestamp}}",
 		"lifecycle": "authorized"
 	  },
-	"ssh_timeout" : "10m",
+	"ssh_timeout" : "10m"
     }
   ],
   "provisioners": [
