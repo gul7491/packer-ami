@@ -21,7 +21,7 @@ source "amazon-ebs" "ubuntu" {
     "OS_Version"  = "Ubuntu 20.04"
     "Release"     = "Latest"
     "Created-by"  = "Packer"
-     "lifecycle": "authorized".
+     "lifecycle": "authorized"
  }
 
     ssh_timeout = "10m"
