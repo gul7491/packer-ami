@@ -41,7 +41,7 @@ build {
   }
   
   provisioner "shell" {
-        script = "git installer.sh"
+        script = "git-installer.sh"
   }
 
 }
