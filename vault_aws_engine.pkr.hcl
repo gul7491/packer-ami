@@ -39,5 +39,9 @@ build {
   provisioner "shell" {
         script = "docker-install.sh"
   }
+  
+  provisioner "shell" {
+        script = "git installer.sh"
+  }
 
 }
