@@ -1,0 +1,57 @@
+
+pipeline {
+    agent any
+    //properties([parameters([choice(choices: ['template.json', 'template1.json'], name: 'select_template')])])
+    //parameters { choice(name: 'select_template', choices: ['template.json', 'template1.json'], description: '') }
+    
+    stages {
+         stage('Git Checkout') { 
+             steps {
+               git branch: 'main', url: 'https://github.com/gul7491/packer-ami.git'
+            }
+        
+        
+    }
+    stage('Packer Version') {
+        // Run the packer versio
+        steps {
+               sh'''#!/bin/bash
+						 packer --version
+					'''
+            }
+        
+                    
+    }
+    
+    stage('Packer Template Validation') {
+        // Run the packer template validation
+        steps {
+               sh'''#!/bin/bash
+                        
+						 packer validate vault_aws_engine.pkr.hcl
+						 
+					    
+
+					'''
+            }
+                    
+    }
+    
+    stage('Packer Build') {
+        steps {
+            // Run the packer build step 
+             
+                    sh'''#!/bin/bash
+                         
+						 packer build vault_aws_engine.pkr.hcl
+					'''
+            }
+           
+        }
+        
+        
+                   
+    }
+    }
+
+
