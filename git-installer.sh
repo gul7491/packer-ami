@@ -5,6 +5,5 @@ command -v git >/dev/null 2>&1 ||
              sudo apt install git
 
       }
-echo "git already installed"
 GIT_VERSION="$(git --version)"
 echo "git installed version:- " $GIT_VERSION
