@@ -28,7 +28,7 @@ source "amazon-ebs" "ubuntu" {
 
 
   vault_aws_engine {
-    name = "my-role"1
+    name = "my-role"
   }
 
 }
