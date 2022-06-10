@@ -106,3 +106,6 @@ Key                Value
 6.	security_token     <nil>
 Step 4:-
 Login to Jenkins server and set the vault server ip and root token to env and create Jenkins pipeline and run the job. Once job ran successfully it will share the customized AMI to aws cloud.
+ 
+** purpose** 
+ create CI-CD to bake the AMI 
